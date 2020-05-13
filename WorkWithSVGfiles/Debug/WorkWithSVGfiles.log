@@ -1,0 +1,8 @@
+﻿  CommandPannel.cpp
+C:\Users\Krasy\source\repos\WorkWithSVGfiles\WorkWithSVGfiles\FigureArray.h(2,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Krasy\source\repos\WorkWithSVGfiles\WorkWithSVGfiles\CommandPannel.cpp(7,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krasy\source\repos\WorkWithSVGfiles\WorkWithSVGfiles\CommandPannel.cpp(157,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krasy\source\repos\WorkWithSVGfiles\WorkWithSVGfiles\CommandPannel.cpp(175,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Krasy\source\repos\WorkWithSVGfiles\WorkWithSVGfiles\CommandPannel.cpp(289,16): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Krasy\source\repos\WorkWithSVGfiles\WorkWithSVGfiles\CommandPannel.cpp(22): warning C4715: 'extractNumber': not all control paths return a value
+  WorkWithSVGfiles.vcxproj -> C:\Users\Krasy\source\repos\WorkWithSVGfiles\Debug\WorkWithSVGfiles.exe
