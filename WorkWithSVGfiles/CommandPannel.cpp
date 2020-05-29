@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include"CommandPannel.h"
-
+//I use this function to extract numbers from a string
 double extractNumber(std::string sentence) {
 	double number = 0;
 	sentence.push_back('.');
@@ -141,7 +141,7 @@ void CommandPannel::startProgram(){
 		if (openedFile == true) {
 
 			if (strcmp(command, "open") == 0) {
-				
+				//I use this so that the file we want to open is opened like a txt file
 				std::cin >> NameOfFile;
 				NameOfFile.push_back('.');
 				NameOfFile.push_back('t');
@@ -278,6 +278,7 @@ void CommandPannel::startProgram(){
 				
 				std::cin >> one >> two;
 				std::cin.get(letter);
+				//if nothing more is typed then the user wants to translate all of the Figures
 				if (letter != '\n') {
 					isTypedNumber = true;
 					std::cin >> three;

@@ -102,7 +102,7 @@ void Rectangle::read(std::istream& in) {
 				in >> xValue >> yValue >> widthValue >> heightValue >> fillValue >> endoFLine;
 
 				bool isFirstQ = false;
-				
+				//here I extract the x value of the starting Point
 				for (int i = 0; i < xValue.size(); i++) {
 					if (xValue[i] == '"' && isFirstQ == true) {
 						break;
@@ -114,10 +114,11 @@ void Rectangle::read(std::istream& in) {
 						isFirstQ = true;
 					}
 				}
+				//here I convert it to double
 				x = strtod(xDouble.c_str(), nullptr);
 				
 				isFirstQ = false;
-
+				//here I extract the y value of the starting Point of the Rectangle
 				for (int i = 0; i < yValue.size(); i++) {
 					if (yValue[i] == '"' && isFirstQ == true) {
 						break;
@@ -129,9 +130,11 @@ void Rectangle::read(std::istream& in) {
 						isFirstQ = true;
 					}
 				}
+				//here I convert it to double
 				y = strtod(yDouble.c_str(), nullptr);
 				
 				isFirstQ = false;
+				//here I extract the width value of the Rectangle
 				for (int i = 0; i < widthValue.size(); i++) {
 					if (widthValue[i] == '"' && isFirstQ == true) {
 						break;
@@ -143,9 +146,11 @@ void Rectangle::read(std::istream& in) {
 						isFirstQ = true;
 					}
 				}
+				//here I convert it to double
 				width = strtod(widthDouble.c_str(), nullptr);
 				
 				isFirstQ = false;
+				//here I extract the height value of the Rectangle
 				for (int i = 0; i < heightValue.size(); i++) {
 					if (heightValue[i] == '"' && isFirstQ == true) {
 						break;
@@ -157,6 +162,7 @@ void Rectangle::read(std::istream& in) {
 						isFirstQ = true;
 					}
 				}
+				//here I convert it to double
 				height = strtod(heightDouble.c_str(), nullptr);
 
 				int count = 0;

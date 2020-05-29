@@ -3,36 +3,43 @@
 #include <cstdlib>
 #include <iostream>
 #include <cassert>
-
+///my own vector class I use for FigureArray
 template <typename T>
 class myVector
 {
 public:
+	///constructor
 	myVector();
+	///constructor
 	myVector(int);
+	///copy-constructor
 	myVector(const myVector&);
+	///operator =
 	myVector& operator = (const myVector&);
+	///destructor
 	~myVector();
-
+	///operator []
 	const T& operator [] (int index) const;
+	///operator []
 	T& operator [] (int);
-
+	///adds new items in the vector
 	void push_back(const T&);
+	///removes item on a specific position from the vector
 	void remove(int);
-
+	///returns capacity
 	int getCapacity() const;
+	///returns size
 	int getSize() const;
-
+	///clears the vector
 	void clear();
-
+	///operator << used to save vector to a file
 	friend std::ostream& operator << (std::ostream& out, const myVector<T>& a)
 	{
 		out << a.capacity << '\t' << a.size << std::endl;
 
 		for (int i = 0; i < a.size; ++i)
 		{
-			/// записваме (извеждаме) отделните елементи с разделите табулаци€
-			/// за конкретни€ тип T тр€бва да е предефиниран operator <<
+			
 			out << a.elements[i] << '\t';
 		}
 
@@ -63,7 +70,7 @@ myVector<T>::myVector(const myVector<T>& other)
 	this->size = other.size;
 
 	this->elements = new T[this->capacity];
-	for (size_t i = 0; i < this->size; ++i)
+	for (int i = 0; i < this->size; ++i)
 	{
 		this->elements[i] = other.elements[i];
 	}

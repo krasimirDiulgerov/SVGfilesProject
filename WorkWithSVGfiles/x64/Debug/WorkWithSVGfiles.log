@@ -1,0 +1,16 @@
+﻿  Circle.cpp
+  CommandPannel.cpp
+C:\Users\Krasy\Desktop\SVG PROJECT !!\SVGfilesProject\WorkWithSVGfiles\FigureArray.h(2,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  FigureArray.cpp
+C:\Users\Krasy\Desktop\SVG PROJECT !!\SVGfilesProject\WorkWithSVGfiles\CommandPannel.cpp(289,16): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  line.cpp
+  main.cpp
+C:\Users\Krasy\Desktop\SVG PROJECT !!\SVGfilesProject\WorkWithSVGfiles\FigureArray.h(2,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  rectangle.cpp
+  Generating Code...
+C:\Users\Krasy\Desktop\SVG PROJECT !!\SVGfilesProject\WorkWithSVGfiles\FigureArray.h(2,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Krasy\Desktop\SVG PROJECT !!\SVGfilesProject\WorkWithSVGfiles\myVector.hpp(111): warning C4715: 'myVector<Figure *>::operator[]': not all control paths return a value
+C:\Users\Krasy\Desktop\SVG PROJECT !!\SVGfilesProject\WorkWithSVGfiles\FigureArray.cpp(134): warning C4715: 'FigureArray::containedInRectangle': not all control paths return a value
+C:\Users\Krasy\Desktop\SVG PROJECT !!\SVGfilesProject\WorkWithSVGfiles\FigureArray.cpp(108): warning C4715: 'FigureArray::containedInCircle': not all control paths return a value
+C:\Users\Krasy\Desktop\SVG PROJECT !!\SVGfilesProject\WorkWithSVGfiles\CommandPannel.cpp(22): warning C4715: 'extractNumber': not all control paths return a value
+  WorkWithSVGfiles.vcxproj -> C:\Users\Krasy\Desktop\SVG PROJECT !!\SVGfilesProject\x64\Debug\WorkWithSVGfiles.exe

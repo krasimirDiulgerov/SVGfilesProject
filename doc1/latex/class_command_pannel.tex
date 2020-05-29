@@ -1,0 +1,65 @@
+\hypertarget{class_command_pannel}{}\section{Command\+Pannel Class Reference}
+\label{class_command_pannel}\index{CommandPannel@{CommandPannel}}
+
+
+This is the core of the program.\+Here I define all commands.  
+
+
+
+
+{\ttfamily \#include $<$Command\+Pannel.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_command_pannel_adf52e9930fb6d838164d2a49ff3c7cdc}\label{class_command_pannel_adf52e9930fb6d838164d2a49ff3c7cdc}} 
+void {\bfseries open} (\mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&, std\+::istream \&)
+\item 
+\mbox{\Hypertarget{class_command_pannel_a44a531f45bfd59a8c8dd8c10d3889d20}\label{class_command_pannel_a44a531f45bfd59a8c8dd8c10d3889d20}} 
+void {\bfseries close} (\mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&)
+\item 
+\mbox{\Hypertarget{class_command_pannel_af3862a0b8f3c252fdd01d9faac351cf5}\label{class_command_pannel_af3862a0b8f3c252fdd01d9faac351cf5}} 
+void {\bfseries save} (std\+::ostream \&, \mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&)
+\item 
+\mbox{\Hypertarget{class_command_pannel_ac0330c44bcbc5b61c31210750d644e24}\label{class_command_pannel_ac0330c44bcbc5b61c31210750d644e24}} 
+void {\bfseries help} ()
+\item 
+\mbox{\Hypertarget{class_command_pannel_ae82a564df4555ffddb10ff53f5e4063b}\label{class_command_pannel_ae82a564df4555ffddb10ff53f5e4063b}} 
+void {\bfseries exit} ()
+\item 
+\mbox{\Hypertarget{class_command_pannel_a007b8f3dfcd45ebb3895e91b122ac7b3}\label{class_command_pannel_a007b8f3dfcd45ebb3895e91b122ac7b3}} 
+void {\bfseries print} (\mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&)
+\item 
+\mbox{\Hypertarget{class_command_pannel_aad4e02ffcc2a78f86f9840b0e893b52e}\label{class_command_pannel_aad4e02ffcc2a78f86f9840b0e893b52e}} 
+void {\bfseries create\+Rect} (\mbox{\hyperlink{struct_point}{Point}} \&start, double width, double height, const char $\ast$colour, \mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&other)
+\item 
+\mbox{\Hypertarget{class_command_pannel_aa298bf4795a5a4fa9c95414822d5a2c9}\label{class_command_pannel_aa298bf4795a5a4fa9c95414822d5a2c9}} 
+void {\bfseries create\+Circle} (\mbox{\hyperlink{struct_point}{Point}} \&centre, double radius, const char $\ast$colour, \mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&array)
+\item 
+\mbox{\Hypertarget{class_command_pannel_ad0df34b07a5d0c3e165ef82011c22b57}\label{class_command_pannel_ad0df34b07a5d0c3e165ef82011c22b57}} 
+void {\bfseries create\+Line} (\mbox{\hyperlink{struct_point}{Point}} \&, \mbox{\hyperlink{struct_point}{Point}} \&, const char $\ast$colour, \mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&array)
+\item 
+\mbox{\Hypertarget{class_command_pannel_aa066fb35efbb949ffbe3cc97a96114fa}\label{class_command_pannel_aa066fb35efbb949ffbe3cc97a96114fa}} 
+void {\bfseries within\+Circle} (\mbox{\hyperlink{struct_point}{Point}} \&, double, \mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&)
+\item 
+\mbox{\Hypertarget{class_command_pannel_a9697185be8d63c540426ee9a6a1c1fa0}\label{class_command_pannel_a9697185be8d63c540426ee9a6a1c1fa0}} 
+void {\bfseries within\+Rectangle} (\mbox{\hyperlink{struct_point}{Point}} \&, double, double, \mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&)
+\item 
+\mbox{\Hypertarget{class_command_pannel_a7b38972499a4e86ebfe71de9d1321bae}\label{class_command_pannel_a7b38972499a4e86ebfe71de9d1321bae}} 
+void {\bfseries erase} (int, \mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&)
+\item 
+\mbox{\Hypertarget{class_command_pannel_a55e07ccbdd9c1c9e0fbae711c9d693d9}\label{class_command_pannel_a55e07ccbdd9c1c9e0fbae711c9d693d9}} 
+void {\bfseries translate} (int, \mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&, double, double)
+\item 
+\mbox{\Hypertarget{class_command_pannel_af5b2cc5f564e40f6044101667ac4c9af}\label{class_command_pannel_af5b2cc5f564e40f6044101667ac4c9af}} 
+void {\bfseries start\+Program} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the core of the program.\+Here I define all commands. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Krasy/\+Desktop/\+S\+V\+G P\+R\+O\+J\+E\+C\+T !!/\+S\+V\+Gfiles\+Project/\+Work\+With\+S\+V\+Gfiles/Command\+Pannel.\+h\item 
+C\+:/\+Users/\+Krasy/\+Desktop/\+S\+V\+G P\+R\+O\+J\+E\+C\+T !!/\+S\+V\+Gfiles\+Project/\+Work\+With\+S\+V\+Gfiles/Command\+Pannel.\+cpp\end{DoxyCompactItemize}

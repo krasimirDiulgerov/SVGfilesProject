@@ -53,6 +53,7 @@ void Circle::read(std::istream& in) {
 			in >> cxValue >> cyValue >> radiusValue >> fillValue >> EndOfLine;
 
 			bool isFirstQ = false;
+			//here i extract the string for the x value of the centre Point
 			for (int i = 0; i < cxValue.size(); i++) {
 				if (cxValue[i] == '"' && isFirstQ == true) {
 					break;
@@ -64,8 +65,10 @@ void Circle::read(std::istream& in) {
 					isFirstQ = true;
 				}
 			}
+			//here i convert the string to a double
 			cx = strtod(cxDouble.c_str(), nullptr);
 
+			//here i extract the string for the y value of the centre Point
 			 isFirstQ = false;
 			for (int i = 0; i < cyValue.size(); i++) {
 				if (cyValue[i] == '"' && isFirstQ == true) {
@@ -78,8 +81,9 @@ void Circle::read(std::istream& in) {
 					isFirstQ = true;
 				}
 			}
+			//here i convert the string to a double
 			cy = strtod(cyDouble.c_str(), nullptr);
-
+			//here i extract the string for the radius
 			 isFirstQ = false;
 			for (int i = 0; i < radiusValue.size(); i++) {
 				if (radiusValue[i] == '"' && isFirstQ == true) {
@@ -92,8 +96,10 @@ void Circle::read(std::istream& in) {
 					isFirstQ = true;
 				}
 			}
+			//here i convert the string to a double
 			radius = strtod(radiusDouble.c_str(), nullptr);
 
+			//here I take the string for the colour
 			isFirstQ = false;
 			for (int i = 0; i < fillValue.size(); i++) {
 				if (fillValue[i] == '"' && isFirstQ == true) {

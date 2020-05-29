@@ -1,0 +1,55 @@
+\hypertarget{class_figure}{}\section{Figure Class Reference}
+\label{class_figure}\index{Figure@{Figure}}
+
+
+this class is abstract and I use it as a base class.\+A figure can be \mbox{\hyperlink{class_rectangle}{Rectangle}} , \mbox{\hyperlink{class_circle}{Circle}} and a \mbox{\hyperlink{class_line}{Line}}  
+
+
+
+
+{\ttfamily \#include $<$figure.\+h$>$}
+
+Inheritance diagram for Figure\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_figure}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_figure_ac69bb3510421374e28be251b8f93f6c6}\label{class_figure_ac69bb3510421374e28be251b8f93f6c6}} 
+virtual void {\bfseries print} (std\+::ostream \&out) const =0
+\item 
+\mbox{\Hypertarget{class_figure_a6ad7c96996c6f759bd410e55facc93b1}\label{class_figure_a6ad7c96996c6f759bd410e55facc93b1}} 
+virtual void {\bfseries read} (std\+::istream \&in)=0
+\item 
+\mbox{\Hypertarget{class_figure_a5841bae25099397c1b7b7dbc3fc1fc84}\label{class_figure_a5841bae25099397c1b7b7dbc3fc1fc84}} 
+virtual \mbox{\hyperlink{class_figure}{Figure}} \& {\bfseries translate} (double horizontal, double vertical)=0
+\item 
+\mbox{\Hypertarget{class_figure_aad4e8eeaca53892fd79b70c9c5520d0c}\label{class_figure_aad4e8eeaca53892fd79b70c9c5520d0c}} 
+virtual bool {\bfseries contains\+Point} (const \mbox{\hyperlink{struct_point}{Point}} \&) const =0
+\item 
+\mbox{\Hypertarget{class_figure_aab8049ebab496846638154e7ccba44f0}\label{class_figure_aab8049ebab496846638154e7ccba44f0}} 
+virtual const char $\ast$ {\bfseries get\+Type} () const =0
+\item 
+\mbox{\Hypertarget{class_figure_a05ac8256e55beed4678e52fc8d2fc7db}\label{class_figure_a05ac8256e55beed4678e52fc8d2fc7db}} 
+virtual void {\bfseries print\+On\+Console} ()=0
+\item 
+\mbox{\Hypertarget{class_figure_a347f6041f771c95921b579a3b9e24a6f}\label{class_figure_a347f6041f771c95921b579a3b9e24a6f}} 
+virtual bool {\bfseries contained\+In\+Circle} (\mbox{\hyperlink{struct_point}{Point}} \&centre, double radius) const =0
+\item 
+\mbox{\Hypertarget{class_figure_a604521768149b9da1723465ac5374321}\label{class_figure_a604521768149b9da1723465ac5374321}} 
+virtual bool {\bfseries contained\+In\+Rectangle} (\mbox{\hyperlink{struct_point}{Point}} \&start, double width, double height) const =0
+\item 
+\mbox{\Hypertarget{class_figure_ad5d3b452ae6baff36c6766deddd8e061}\label{class_figure_ad5d3b452ae6baff36c6766deddd8e061}} 
+virtual \mbox{\hyperlink{class_figure}{Figure}} $\ast$ {\bfseries clone} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class is abstract and I use it as a base class.\+A figure can be \mbox{\hyperlink{class_rectangle}{Rectangle}} , \mbox{\hyperlink{class_circle}{Circle}} and a \mbox{\hyperlink{class_line}{Line}} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Krasy/\+Desktop/\+S\+V\+G P\+R\+O\+J\+E\+C\+T !!/\+S\+V\+Gfiles\+Project/\+Work\+With\+S\+V\+Gfiles/figure.\+h\end{DoxyCompactItemize}

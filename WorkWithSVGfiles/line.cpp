@@ -44,7 +44,7 @@ void Line::read(std::istream& in){
 		in >> type;
 		if (strcmp(type, "line") == 0) {
 			in >> sxValue >> syValue >> enxValue >> enyValue >> EndLine;
-
+			//here I get the string for the starting Point x value
 			bool isFirstQ = false;
 			for (int i = 0; i < sxValue.size(); i++) {
 				if (sxValue[i] == '"' && isFirstQ == true) {
@@ -57,9 +57,11 @@ void Line::read(std::istream& in){
 					isFirstQ = true;
 				}
 			}
+			//here I convert it to double
 			sx = strtod(sxDouble.c_str(), nullptr);
 
 			isFirstQ = false;
+			//here I get the string for the starting Point y value
 			for (int i = 0; i < syValue.size(); i++) {
 				if (syValue[i] == '"' && isFirstQ == true) {
 					break;
@@ -71,9 +73,12 @@ void Line::read(std::istream& in){
 					isFirstQ = true;
 				}
 			}
+			//here I convert it to double
 			sy = strtod(syDouble.c_str(), nullptr);
 
 			 isFirstQ = false;
+
+			 //here i get the string for the ending Point x value
 			for (int i = 0; i < enxValue.size(); i++) {
 				if (enxValue[i] == '"' && isFirstQ == true) {
 					break;
@@ -85,9 +90,11 @@ void Line::read(std::istream& in){
 					isFirstQ = true;
 				}
 			}
+			//here I convert it to double
 			enx = strtod(enxDouble.c_str(), nullptr);
 
 			 isFirstQ = false;
+			 //here I get the string for the ending Point y value
 			for (int i = 0; i < enyValue.size(); i++) {
 				if (enyValue[i] == '"' && isFirstQ == true) {
 					break;
@@ -99,8 +106,9 @@ void Line::read(std::istream& in){
 					isFirstQ = true;
 				}
 			}
+			//here I convert it to double
 			eny = strtod(enyDouble.c_str(), nullptr);
-
+			//here i extract the colour
 			isFirstQ = false;
 			for (int i = 0; i < fillValue.size(); i++) {
 				if (fillValue[i] == '"' && isFirstQ == true) {

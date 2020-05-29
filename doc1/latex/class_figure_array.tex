@@ -1,0 +1,80 @@
+\hypertarget{class_figure_array}{}\section{Figure\+Array Class Reference}
+\label{class_figure_array}\index{FigureArray@{FigureArray}}
+
+
+this class is used to keep the information gathered from the files.\+It contains a vector of addresses of Figures  
+
+
+
+
+{\ttfamily \#include $<$Figure\+Array.\+h$>$}
+
+Inheritance diagram for Figure\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_figure_array}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_figure_array_aebe53c961441949b5b066ebd58b5bcfc}\label{class_figure_array_aebe53c961441949b5b066ebd58b5bcfc}} 
+{\bfseries Figure\+Array} (const \mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&other)
+\item 
+\mbox{\Hypertarget{class_figure_array_a0b91d274913d3525a00ad31e39e47353}\label{class_figure_array_a0b91d274913d3525a00ad31e39e47353}} 
+\mbox{\hyperlink{class_figure_array}{Figure\+Array}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_figure_array}{Figure\+Array}} \&other)
+\item 
+\mbox{\Hypertarget{class_figure_array_acfc4b29699b22a7576e976ad9e27d161}\label{class_figure_array_acfc4b29699b22a7576e976ad9e27d161}} 
+\mbox{\hyperlink{class_figure}{Figure}} $\ast$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index)
+\item 
+\mbox{\Hypertarget{class_figure_array_a897dc4b592ab671c57c03536085bf748}\label{class_figure_array_a897dc4b592ab671c57c03536085bf748}} 
+int {\bfseries get\+Count\+Figures} () const
+\item 
+\mbox{\Hypertarget{class_figure_array_af405934366bba58d2955c935722c1a5a}\label{class_figure_array_af405934366bba58d2955c935722c1a5a}} 
+virtual void {\bfseries print} (std\+::ostream \&out) const
+\item 
+\mbox{\Hypertarget{class_figure_array_a98e620de3aabee70754700bba30d3151}\label{class_figure_array_a98e620de3aabee70754700bba30d3151}} 
+virtual void {\bfseries read} (std\+::istream \&in)
+\item 
+\mbox{\Hypertarget{class_figure_array_a4266fe37471b9f57209f222411c21f5b}\label{class_figure_array_a4266fe37471b9f57209f222411c21f5b}} 
+virtual \mbox{\hyperlink{class_figure}{Figure}} \& {\bfseries translate} (double, double)
+\item 
+\mbox{\Hypertarget{class_figure_array_a3def9684cbb77037f45f52b378fa4930}\label{class_figure_array_a3def9684cbb77037f45f52b378fa4930}} 
+bool {\bfseries contained\+In\+Circle} (\mbox{\hyperlink{struct_point}{Point}} \&centre, double radius) const
+\item 
+\mbox{\Hypertarget{class_figure_array_a9188c4170fcda7ae6ef089aa3497c71b}\label{class_figure_array_a9188c4170fcda7ae6ef089aa3497c71b}} 
+bool {\bfseries contained\+In\+Rectangle} (\mbox{\hyperlink{struct_point}{Point}} \&start, double width, double height) const
+\item 
+\mbox{\Hypertarget{class_figure_array_a61eb8080289984b0b4f4ab6223dff5e7}\label{class_figure_array_a61eb8080289984b0b4f4ab6223dff5e7}} 
+virtual \mbox{\hyperlink{class_figure}{Figure}} $\ast$ {\bfseries clone} () const
+\item 
+\mbox{\Hypertarget{class_figure_array_a2aba5ed654c6cc23db153f8f7bb69eb8}\label{class_figure_array_a2aba5ed654c6cc23db153f8f7bb69eb8}} 
+virtual const char $\ast$ {\bfseries get\+Type} () const
+\item 
+\mbox{\Hypertarget{class_figure_array_a753ab2cf2720fa7b873719bab8e53a3d}\label{class_figure_array_a753ab2cf2720fa7b873719bab8e53a3d}} 
+void {\bfseries translate\+Figure\+Index} (int n, double horizontal, double vertical)
+\item 
+\mbox{\Hypertarget{class_figure_array_acbac0c1e267c4591b219cdb993bb46f5}\label{class_figure_array_acbac0c1e267c4591b219cdb993bb46f5}} 
+virtual bool {\bfseries contains\+Point} (const \mbox{\hyperlink{struct_point}{Point}} \&) const
+\item 
+\mbox{\Hypertarget{class_figure_array_a4d8468b298894bee1cf283bb062dd6ca}\label{class_figure_array_a4d8468b298894bee1cf283bb062dd6ca}} 
+virtual void {\bfseries print\+On\+Console} ()
+\item 
+\mbox{\Hypertarget{class_figure_array_a2ce4b5399e97232ddaf4f8ca18b1ddc3}\label{class_figure_array_a2ce4b5399e97232ddaf4f8ca18b1ddc3}} 
+void {\bfseries remove} (int)
+\item 
+\mbox{\Hypertarget{class_figure_array_a3015510c1fae81110a428c82be3d2f4e}\label{class_figure_array_a3015510c1fae81110a428c82be3d2f4e}} 
+void {\bfseries push\+New\+Figure} (\mbox{\hyperlink{class_figure}{Figure}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_figure_array_a5405e4e7482ec612c419cea3c1376c24}\label{class_figure_array_a5405e4e7482ec612c419cea3c1376c24}} 
+void {\bfseries clear} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class is used to keep the information gathered from the files.\+It contains a vector of addresses of Figures 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Krasy/\+Desktop/\+S\+V\+G P\+R\+O\+J\+E\+C\+T !!/\+S\+V\+Gfiles\+Project/\+Work\+With\+S\+V\+Gfiles/Figure\+Array.\+h\item 
+C\+:/\+Users/\+Krasy/\+Desktop/\+S\+V\+G P\+R\+O\+J\+E\+C\+T !!/\+S\+V\+Gfiles\+Project/\+Work\+With\+S\+V\+Gfiles/Figure\+Array.\+cpp\end{DoxyCompactItemize}
